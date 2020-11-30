@@ -246,20 +246,20 @@ ul#nav li.current a { color: #4da8da; font-size: larger;}
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#resume a, #resume a:visited  { color: #4da8da; }
+#resume a:hover, #resume a:focus { color: #1d1d1d; }
 
 #resume h1 {
-   font: 18px/24px 'muli-bold', sans-serif;
+   font: 18px/24px 'metropolis-extrabold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #11ABB0;
+   border-bottom: 3px solid #4da8da;
    padding-bottom: 6px;
 }
 #resume h3 {
-   font: 25px/30px 'muli-bold', sans-serif;
+   font: 25px/30px 'metropolis-bold', sans-serif;
 }
 #resume h2 {
    letter-spacing: 2px;
@@ -269,17 +269,21 @@ ul#nav li.current a { color: #4da8da; font-size: larger;}
    margin-bottom: 50px;
 }
 
+#resume p {
+   color: rgb(26, 26, 26);
+}
+
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
-   border-bottom: 1px solid #E8E8E8;
+   border-bottom: 1px solid #203647;
 }
 #resume .info {
    font: 16px/24px 'muli-italic', serif;
-   color: #6E7881;
+   color: #000;
    margin-bottom: 18px;
    margin-top: 9px;
 }
