@@ -479,7 +479,7 @@ ul#nav li.current a { color: #4da8da; font-size: larger;}
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   background: #203647;
    padding-top: 90px;
    padding-bottom: 60px;
 }
@@ -492,6 +492,89 @@ ul#nav li.current a { color: #4da8da; font-size: larger;}
    color: #95A3A3;
 }
 
+#portfolio h2.heading {
+   letter-spacing: 2px;
+   text-align: center;
+   font: 20px 'metropolis-extrabold', sans-serif;
+   color: #eefbfb;
+   margin-bottom: 50px;
+}
+
+#portfolio h3 {
+   padding-left: 20px;
+   color: #eefbfb;
+   font: 16px/24px 'muli-regular', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 4px;
+   margin-bottom: 25px;
+}
+#portfolio h3 span {
+   border-bottom: 3px solid #4da8da;
+   padding-bottom: 3px;
+}
+
+.portfolio-container {
+   overflow: hidden;
+   position: relative;
+
+   -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   
+   display: flex;
+   flex-direction: column;
+}
+
+.portfolio-container .image-container img {
+   width: 100%;
+   vertical-align: bottom;
+}
+
+.portfolio-container .info-container {
+   /* info container contains title, description, and date */
+   background: white;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+}
+
+.portfolio-container .info-container .title-date-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   margin-bottom: 15px;
+}
+
+.portfolio-container .info-container .title-date-container span.title {
+   font: 18px/26px 'muli-bold', sans-serif;
+   color: #203647;
+}
+
+.portfolio-container .info-container .title-date-container span.date {
+   font: 14px/24px 'muli-lightitalic', sans-serif;
+   color: #ababab;
+}
+
+.portfolio-container .info-container p.description {
+   font: 14px/24px 'muli-regular', sans-serif;
+   color: #5e5e5e;
+   margin-bottom: 10px;
+}
+
+.portfolio-container .cta-container {
+   padding: 15px;
+   background: #12232E;
+}
+
+.portfolio-container .cta-container a.cta {
+   text-align: left;
+   letter-spacing: 3px;
+   font: 12px/18px 'metropolis-bold', sans-serif;
+   color: #eefbfb;
+}
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {

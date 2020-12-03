@@ -76,6 +76,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'muli-lightitalic';
+    src: url('fonts/Muli/Muli-LightItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*
  * Open Sans
