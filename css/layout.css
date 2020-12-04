@@ -539,6 +539,8 @@ ul#nav li.current a { color: #4da8da; font-size: larger;}
    display: flex;
    flex-direction: column;
    justify-content: start;
+   max-height: 300px;
+   overflow-y: auto;
 }
 
 .portfolio-container .info-container .title-date-container {
@@ -594,6 +596,32 @@ ul#nav li.current a { color: #4da8da; font-size: larger;}
 .portfolio-container .cta-container a.cta:hover {
    color: #4da8da;
 }
+
+.portfolio-container span.read-more {
+   background: transparent;
+   color: #12232E;
+   font-weight: 600;
+}
+.portfolio-container span.read-more:hover {
+   background: transparent;
+   color: #4da8da;
+   cursor: pointer;
+}
+
+#more-research-1 {
+   display: none;
+}
+#more-research-2 {
+   display: none;
+}
+#more-research-3 {
+   display: none;
+}
+#more-research-4 {
+   display: none;
+}
+
+
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
