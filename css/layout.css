@@ -620,7 +620,21 @@ ul#nav li.current a { color: #4da8da; font-size: larger;}
 #more-research-4 {
    display: none;
 }
-
+#more-technical-1 {
+   display: none;
+}
+#more-technical-2 {
+   display: none;
+}
+#more-technical-3 {
+   display: none;
+}
+#more-technical-4 {
+   display: none;
+}
+#more-technical-5 {
+   display: none;
+}
 
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
