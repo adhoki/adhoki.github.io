@@ -564,6 +564,21 @@ ul#nav li.current a { color: #4da8da; font-size: larger;}
    margin-bottom: 10px;
 }
 
+.portfolio-container .info-container span.guides {
+   font: 14px/24px 'muli-extrabold', sans-serif;
+   color: #007CC7;
+}
+
+.portfolio-container .info-container a.guides {
+   font: 14px/24px 'muli-regular', sans-serif;
+   color:  #007CC7;
+}
+.portfolio-container .info-container a.guides:hover {
+   font: 14px/24px 'muli-regular', sans-serif;
+   color:  #203647;
+   text-decoration: underline;
+}
+
 .portfolio-container .cta-container {
    padding: 15px;
    background: #12232E;
@@ -574,6 +589,10 @@ ul#nav li.current a { color: #4da8da; font-size: larger;}
    letter-spacing: 3px;
    font: 12px/18px 'metropolis-bold', sans-serif;
    color: #eefbfb;
+}
+
+.portfolio-container .cta-container a.cta:hover {
+   color: #4da8da;
 }
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
