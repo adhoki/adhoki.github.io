@@ -708,6 +708,8 @@ input[type="checkbox"] { display: inline; }
 .bgrid-quarters [class*="column"] { width: 25%; }
 .bgrid-thirds [class*="column"]   { width: 33.33333%; }
 .bgrid-halves [class*="column"]   { width: 50%; }
+.bgrid-fifths [class*="column"]   { width: 20%; }
+
 
 [class*="bgrid"] [class*="column"] + [class*="column"]:last-child { float: left; }
 
@@ -730,6 +732,21 @@ properly.
 
    /* block grids left clearing */
    .first { clear: none; }
+   .s-first { clear: left; }
+
+}
+
+@media only screen and (max-width: 1600px) {
+
+   /* block grids on small screens */
+   .m-bgrid-sixths [class*="column"]   { width: 16.66667%; }
+   .m-bgrid-quarters [class*="column"] { width: 25%; }
+   .m-bgrid-thirds [class*="column"]   { width: 33.33333%; }
+   .m-bgrid-halves [class*="column"]   { width: 50%; }
+
+   /* block grids left clearing */
+   .first { clear: none; }
+   .m-first { clear: left; }
    .s-first { clear: left; }
 
 }

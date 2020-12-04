@@ -560,6 +560,12 @@ ul#nav li.current a { color: #4da8da; font-size: larger;}
    color: #ababab;
 }
 
+.portfolio-container .info-container .title-date-container a.link-to-website {
+   font: 16px/24px 'muli-bold', sans-serif;
+   color: #007CC7;
+   text-transform: uppercase;
+}
+
 .portfolio-container .info-container p.description {
    font: 14px/24px 'muli-regular', sans-serif;
    color: #5e5e5e;
