@@ -1222,3 +1222,214 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+.project-body {
+   padding: 4% 0%; 
+   background-color: white;
+}
+
+.project-parent-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+}
+
+.project-parent-container h3 {
+   text-align: center;
+}
+
+.banner-image-container {
+   width: 100%;
+   height: 200px;
+   overflow: hidden;
+   margin-bottom: 50px;
+}
+img.banner-image {
+   object-fit: fill;
+}
+
+.project-parent-container .project-title {
+   margin-bottom: 20px;
+}
+
+
+
+h2.project-title {
+   font-size: 30px;
+   font-family: 'metropolis-bold', sans-serif;
+   color: #12232E;
+   text-align: left;
+   line-height: 40px;
+}
+
+.project-subtitle-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom: 10px;
+}
+.project-subtitle-container span.project-type {
+   font-family: 'muli-italic';
+   font-size: 20px;
+   color: #203647;
+   text-align: left;
+}
+.project-subtitle-container span.project-date {
+   font-family: 'muli-italic';
+   font-size: 20px;
+   color: #203647;
+   text-align: right;
+}
+.guide-information {
+   margin-bottom: 50px;
+}
+.guide-information span.guided-by {
+   font-family: 'muli-semibold-italic';
+   font-size: 20px;
+   color: #007CC7;
+   text-align: left;
+}
+
+.guide-information a.guide-link {
+   font-family: 'muli-semibold-italic';
+   font-size: 20px;
+   color: #007CC7;
+   text-align: left;
+}
+
+.guide-information a.guide-link:hover {
+   color: #203647;
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+.project-button-main-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.project-left-button-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+}
+
+button.project-button {
+   padding: 10px 40px;
+   background-color: #203647;
+   border-radius: 5px;
+   margin-right: 20px;
+}
+
+button.project-button:hover {
+   background-color: #007cc7;
+}
+
+button.link-to-github-button {
+   padding: 10px 40px;
+   background-color: #EEFBFB;
+   border-radius: 5px;
+   margin-left: 20px;
+   color: #12232E;
+   border: 1px solid #007cc7;
+}
+button.link-to-github-button:hover {
+   background-color: #007cc7;
+   color: #EEFBFB;
+   border: 1px solid #007cc7;
+}
+button.link-to-github-button:hover span {
+   color: #eefbfb;
+}
+
+i.icon-button {
+   font-size: 30px;
+   color: #12232E;
+   padding-left: 10px;
+}
+
+.project-content-container h3 {
+   padding: 2% 0;
+   text-align: start;
+}
+
+.project-content-container p.project-content-paragraph {
+   font-family: 'noto-serif-regular';
+   font-size: 20px;
+   color: #12232E;
+   text-align: justify;
+   text-justify: inter-word;
+}
+
+.project-content-container .video-container {
+   padding-bottom: 56.25%;
+   position: relative;
+}
+
+.video-container iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+/* Content part of the project - mobile */
+
+@media only screen and (max-width: 800px) and (min-width: 300px) {
+   .project-container {
+      padding: 0 4%;
+   }
+
+   h2.project-title {
+      font-size: 20px;
+      line-height: 25px;
+   }
+
+   .project-parent-container h3 {
+      font-size: 15px;
+   }
+
+   .project-subtitle-container span.project-type {
+      font-size: 12px;
+   }
+   .project-subtitle-container span.project-date {
+      font-size: 12px;
+   }
+   .guide-information {
+      margin-bottom: 30px;
+   }
+   .guide-information span.guided-by {
+      font-size: 15px;
+   }
+   
+   .guide-information a.guide-link {
+      font-size: 15px;
+   }
+
+   .project-button-main-container {
+      flex-direction: column;
+      justify-content: start;
+   }
+
+   .project-left-button-container {
+      flex-direction: column;
+   }
+
+   button.project-button {
+      padding: 5px;
+      width: 100%;
+   }
+   
+   button.link-to-github-button {
+      padding: 5px;
+      width: 100%;
+      margin-left: 0;
+   }
+}
+
+@media only screen and (max-width: 2500px) and (min-width: 800px) {
+   .project-container {
+      padding: 0 15%;
+   }
+}

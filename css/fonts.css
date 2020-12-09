@@ -82,6 +82,24 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'muli-semibold-italic';
+    src: url('fonts/Muli/Muli-SemiBoldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+ * Noto Serif
+ * =============================================================================
+*/
+
+@font-face {
+    font-family: 'noto-serif-regular';
+    src: url('fonts/Noto-Serif/NotoSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*
  * Open Sans
