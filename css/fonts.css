@@ -100,6 +100,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'noto-serif-italic';
+    src: url('fonts/Noto-Serif/NotoSerif-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*
  * Open Sans

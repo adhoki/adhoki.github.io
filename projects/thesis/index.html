@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- Basic Page Needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>Thesis</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/media-queries.css">
+    <link rel="stylesheet" href="../../css/magnific-popup.css">
+
+    <!-- Script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body class="project-body">
+
+    <div class="project-parent-container">
+
+        <!-- Page heading -->
+        <h3>THESIS</h3>
+
+        <!-- banner image - non-responsive right now
+        
+        <span>Photo by <a href="https://unsplash.com/@hharritt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Hunter Harritt</a> on <a href="https://unsplash.com/s/photos/machine-learning?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        
+        -->
+
+        <div class='banner-image-container'>
+            <img class='banner-image' src='banner.jpg'>
+        </div>
+        <div class='project-container'>
+            <div class='project-title'>
+                <h2 class='project-title'>
+                    An Analysis of Deep Q-Networks and Applications of Generative Adversarial Networks in Reinforcement
+                    Learning
+                </h2>
+            </div>
+
+            <div class='project-subtitle-container'>
+                <span class='project-type'>
+                    B. Tech Thesis
+                </span>
+
+                <span class='project-date'>
+                    Spring 2020
+                </span>
+            </div>
+
+            <div class='guide-information'>
+                <span class='guided-by'>
+                    Guided By:
+                </span>
+                <a class='guide-link' href='https://scholar.google.com/citations?user=JSL--pMAAAAJ&hl=en'>Dr. Prabuchandran K J</a>
+            </div>
+            <div class='project-button-main-container'>
+                <div class='project-left-button-container'>
+                    <button class="project-button" onclick="window.open('AdhokshajaVMadhwaraj-Thesis.pdf')">View Thesis PDF</button>
+                    <button class="project-button" onclick="window.open('BTP_Presentation.pdf')">View Thesis Slides</button>
+                </div>
+                <div class='project-left-button-container'>
+                    <button class='link-to-github-button'>
+                        <i class="fa fa-github" style='font-size: 25px;
+                        color: #12232E;
+                        padding-right: 10px;'>
+                        </i>Link to Github
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class='project-content-container'>
+                <h3>Abstract</h3>
+                
+                <p class='project-content-paragraph'>
+                    Reinforcement Learning (RL) is a derivative of Machine Learning that is highly influenced by ideologies of Human Learning. Humans learn from their surroundings through multidimensional sensory inputs including visual, auditory, textural, olfactory stimuli among others, and corresponding rewards to learn the optimal behavior in a given situation . Optimal behavior in RL essentially implies maximized rewards. Reinforcement Learning incorporates these basic ideas to enable an agent to learn the optimal policy to follow in an environment. In this project we analyze and present the Deep Q-Learning algorithm along with its most important variants.
+                </p>
+
+                <p class='project-content-paragraph'>
+                    Generative Adversarial Networks (GANs) have been termed as the most interesting idea in the last 10 years in Machine Learning. In this project we present an attempt to generate the transition probabilities of a simple Markov Decision Process with only data from the environment as received by the agent, using GANs in section 13. With this find, we hope to extend this process to the more complex MDPs in the space of Reinforcement Learning, and ultimately be able to generate valid Experience Replay samples via the GAN, which will significantly reduce memory requirement of the learning process in Deep RL tasks.
+
+                </p>
+
+                <h3>Trained Models</h3>
+
+                <div class='video-row-container'>
+                    <div class='video-caption-div'>
+                        <video autoplay controls loop>
+                            <source src="initial.mp4">
+                        </video>
+                        <span>Before training</span>
+                    </div>
+                    <div class='video-caption-div'>
+                        <video autoplay controls loop>
+                            <source src="mid.mp4">
+                        </video>
+                        <span>During training</span>
+                    </div>
+                    <div class='video-caption-div'>
+                        <video autoplay controls loop>
+                            <source src="final.mp4">
+                        </video>
+                        <span>After training</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>

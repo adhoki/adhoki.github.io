@@ -1695,6 +1695,36 @@ i.icon-button {
     height: 100%;
 }
 
+/* Video row container */
+
+.video-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.video-caption-div {
+    width: 33%;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.video-caption-div span {
+    font-family: 'muli-italic';
+    font-size: 20px;
+    color: #203647;
+    text-align: center;
+}
+
+.video-caption-div video {
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
