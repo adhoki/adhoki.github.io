@@ -1608,7 +1608,7 @@ h2.project-title {
     text-align: left;
 }
 
-.guide-information a.guide-link {
+a.guide-link {
     font-family: 'muli-semibold-italic';
     font-size: 20px;
     color: #007CC7;
