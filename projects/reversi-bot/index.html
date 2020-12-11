@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- Basic Page Needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>Adhokshaja Madhwaraj</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/media-queries.css">
+    <link rel="stylesheet" href="../../css/magnific-popup.css">
+
+    <!-- Script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body class="project-body">
+
+    <div class="project-parent-container">
+
+        <!-- Page heading -->
+        <h3>PROJECT</h3>
+
+        <!-- banner image - non-responsive right now
+        
+        <span>Photo by <a href="https://unsplash.com/@hharritt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Hunter Harritt</a> on <a href="https://unsplash.com/s/photos/machine-learning?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        
+        -->
+
+        <div class='banner-image-container'>
+            <img class='banner-image' src='banner.jpg'>
+        </div>
+        <div class='project-container'>
+            <div class='project-title'>
+                <h2 class='project-title'>
+                    AI Bot to play Othello (Reversi)
+                </h2>
+            </div>
+
+            <div class='project-subtitle-container'>
+                <span class='project-type'>
+                    Artificial Intelligence
+                </span>
+
+                <span class='project-date'>
+                    Spring 2019
+                </span>
+            </div>
+
+            <div class='guide-information'>
+                <span class='guided-by'>
+                    Guided By:
+                </span>
+                <a class="guide-link" target='_blank' href="http://www.cse.iitm.ac.in/~khemani/">Dr. Deepak Khemani</a>, <a class="guide-link" target='_blank' href="https://sites.google.com/view/kedark/home">Dr. Kedar Khandeparkar</a>
+            </div>
+            <div class='project-button-main-container'>
+                <div class='project-left-button-container'>
+                    <button class='link-to-github-button' style="margin-left: 0;" onclick="window.open('MyBot.cpp')">
+                        <i class="fa fa-github" style='font-size: 25px;
+                        color: #12232E;
+                        padding-right: 10px;'>
+                        </i>Link to Code
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class='project-content-container'>
+
+                <h3>About the Project</h3>
+
+                <p class='project-content-paragraph'>
+                    Created an autonomous reversi playing agent enabled with classical AI search algorithms. The search algorithms used are minimax search with Alpha-Beta pruning. The agent is triggered after each turn played by the opponent player. The bot makes the next move based on the rules of the game, as well as the next best scoring turn for the bot. The bot constructs the minimax tree, and does an n-ply search using Alpha-Beta pruning. 
+                </p>
+
+                <p class='project-content-paragraph'>
+                    The heuristic score is adjusted according to best strategies in the game, especially having high values for corner tiles. The heuristic function is constructed keeping the stability of the algorithm in mind. The best move is made by the bot, after accumulating the list of next moves possible and choosing the one with the best overall outcome, based on the heuristic function. This bot won the 2nd prize in tournament mode among almost 20 bots, beating 18 other bots, mostly with high win margins.
+                </p>
+
+                <p class='project-content-paragraph'>
+                    Also explored other algorithms like A*, SSS*, before settling with AB pruning, based on performance of all algorithms.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
