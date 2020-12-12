@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- Basic Page Needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>Adhokshaja Madhwaraj</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/media-queries.css">
+    <link rel="stylesheet" href="../../css/magnific-popup.css">
+
+    <!-- Script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body class="project-body">
+
+    <div class="project-parent-container">
+
+        <!-- Page heading -->
+        <h3>PROJECT</h3>
+
+        <!-- banner image - non-responsive right now
+        
+        <span>Photo by <a href="https://unsplash.com/@hharritt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Hunter Harritt</a> on <a href="https://unsplash.com/s/photos/machine-learning?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        
+        -->
+
+        <div class='banner-image-container'>
+            <img class='banner-image' src='banner.jpg'>
+        </div>
+        <div class='project-container'>
+            <div class='project-title'>
+                <h2 class='project-title'>
+                    A cost-effective smart video-conferencing camera system
+                </h2>
+            </div>
+
+            <div class='project-subtitle-container'>
+                <span class='project-type'>
+                    Digital Signal Processing
+                </span>
+
+                <span class='project-date'>
+                    Fall 2018
+                </span>
+            </div>
+
+            <div class='guide-information'>
+                <span class='guided-by'>
+                    Guided By:
+                </span>
+                <a class='guide-link' href='https://sites.google.com/iitdh.ac.in/prasanna/home'>Dr. S R Mahadeva Prasanna</a>
+            </div>
+            <div class='project-button-main-container'>
+                <div class='project-left-button-container'>
+                    <button class="project-button" onclick="window.open('http://legacydirs.umiacs.umd.edu/~ramani/pubs/yegna_delay_TSAP.pdf')">View Related Paper</button>
+                </div>
+            </div>
+            <hr>
+            <div class='project-content-container'>
+
+                <h3>Abstract</h3>
+
+                <p class='project-content-paragraph'>
+                    The white-paper by Prof. Prasanna - 'Processing of Reverberant Speech for Time-Delay Estimation' provides the perfect platform for a low-cost video conferencing solution. Time-delay estimation from microphone outputs is the first step for many sound localization algorithms. The paper proposed a robust method to obtain the time-delay between the signal of two identical microphones. The time-delay estimate can be obtained using the features extracted even from short segments (50–100 ms) of speech from a pair of microphones. The proposed method for time-delay estimation is found to perform better than the generalized cross-correlation (GCC) approach. Time-delay was calculated from the Hilbert envelope of the LP residual of all the speech inputs from the microphones. The method used had significantly better performance than the commonly used Generalised Cross Correlation (GCC). 
+                </p>
+
+                <h3>Setup</h3>
+
+                <p class='project-content-paragraph'>
+                    A microphone array is constructed by using two identical microphones fixed at a known distance between them. The microphones are connected to a computer running our implementation of the algorithm, written in Matlab. The camera is mounted on a servo motor, hooked to the same computer. The microphones record the audio, feed it to the computer. The algorithm calculates the time-delay and accordingly calculates the angle at which the speaker is located. The servo motor is fed the angle information, and the camera is turned accordingly.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>

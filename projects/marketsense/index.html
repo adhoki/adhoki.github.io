@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <!--- Basic Page Needs
+   ================================================== -->
+    <meta charset="utf-8">
+    <title>Adhokshaja Madhwaraj</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/media-queries.css">
+    <link rel="stylesheet" href="../../css/magnific-popup.css">
+
+    <!-- Script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- Favicons
+	================================================== -->
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body class="project-body">
+
+    <div class="project-parent-container">
+
+        <!-- Page heading -->
+        <h3>PROJECT</h3>
+
+        <!-- banner image - non-responsive right now
+        
+        <span>Photo by <a href="https://unsplash.com/@hharritt?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Hunter Harritt</a> on <a href="https://unsplash.com/s/photos/machine-learning?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        
+        -->
+
+        <div class='banner-image-container'>
+            <img class='banner-image' src='banner.jpg'>
+        </div>
+        <div class='project-container'>
+            <div class='project-title'>
+                <h2 class='project-title'>
+                    MarketSense
+                </h2>
+            </div>
+
+            <div class='project-subtitle-container'>
+                <span class='project-type'>
+                    NasdHack 2020, 1st Runner Up
+                </span>
+
+                <span class='project-date'>
+                    Fall 2020
+                </span>
+            </div>
+
+            <div class='project-button-main-container'>
+                <div class='project-left-button-container'>
+                    <button class="project-button" onclick="window.open('Presentation.pdf')">View Presentation</button>
+                </div>
+                <div class='project-left-button-container'>
+                    <button class='link-to-github-button'>
+                        <i class="fa fa-github" style='font-size: 25px;
+                        color: #12232E;
+                        padding-right: 10px;'>
+                        </i>Link to Github
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class='project-content-container'>
+
+                <h3>Need for MarketSense</h3>
+
+                <p class='project-content-paragraph'>
+                    MarketSense is Nasdaq’s latest addition to its expanding portfolio of user-centric technology aiming to bring the market at everyone’s fingertips. MarketSense is a Chrome Extension that allows a user to obtain symbol data, analyst reviews, and market sentiment immediately, whether it is a blog on Medium, or a news snippet on Wall Street Journal, or an article on our Nasdaq.com.                </p>
+
+                <h3>Intended Beneficiaries</h3>
+
+                <p class='project-content-paragraph'>
+                    Intended beneficiaries are two-fold: <br>
+
+                    ·         Nasdaq: Increased brand exposure for the company <br>
+                    
+                    ·         Any user of the internet and interested in the Stock Market                </p>
+
+                <h3>Key Functionalities</h3>
+
+                <p class="project-content-paragraph">
+                    On hover of any keyword enables our extension which analyses the word, and enables a Nasdaq Popup, which instantly provides the user stock market information as well as market sentiment, without extra navigation. Links to the website for the user to get additional information about the quote (charts, historical data, etc)
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
