@@ -1,0 +1,74 @@
+@import url("fonts.css");
+
+.heading-container {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.heading-main-container {
+    height: 100%;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.5 ease;
+    color: #12232e
+}
+
+.heading-main-container:hover {
+    background-color: #007cc7;
+    color: white;
+    justify-content: center;
+    position: relative;
+}
+
+.active-heading {
+    background-color: #12232e;
+    color: white;
+}
+
+.heading-main-container .number-container {
+    text-align: end;
+}
+.heading-main-container .title-container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+}
+.heading-main-container .number-container span {
+    font-family: 'metropolis-bold';
+    font-size: 20px;
+    text-align: right;
+}
+
+.heading-main-container .title-container span {
+    font-family: 'metropolis-bold';
+    font-size: 30px;
+    text-align: left;
+    max-lines: 2;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+
+
+.tab-content {
+    display: none;
+}
+
+.left-content {
+    padding-left: 4rem;
+    padding-top: 4rem;
+    font-size: 3.75rem;
+}
+
+.right-content {
+    padding-left: 4rem;
+    padding-top: 4rem;
+}
+
+.img-custwidth {
+    padding-top: 4rem;
+    width: 512px;
+}
