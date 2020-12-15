@@ -103,122 +103,402 @@
 
         </div>
 
-        <div id="curricular" class="container-fluid tab-content" style="display: flex;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 left-content">
-                        <strong>Design is Human.</strong>
-                        <img src="http://nickfazz.me/codepen_assets/vectors/head_vector_styled.svg"
-                            alt="Line art of human head." class="imf-fluid img-custwidth">
+        <div id="curricular" class="tab-content" style="display: flex;">
+            <div class='banner-image'>
+                <img src="" class='banner-image'>
+            </div>
+            <div class='list-of-achievements-container'>
+
+                <!-- Add the list of achievements here -->
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            12th Grade CBSE Karnataka <span style="color: #007cc7;">1st Rank</span>
+                        </span>
+                        <p class='description'>
+                            Rank 1 among nearly 200,000 students. Click on the button for a link to a prominent newspaper article covering the same.
+                        </p>
                     </div>
-                    <div class="col-sm-6 right-content">
-                        <h3><strong>Design is human. Design is making ideas real.</strong></h3>
-                        <p>Human centered design is at the core of product development. Empathetic communication with
-                            the client is a key part of the development process from the beginning until the product
-                            launch and support phases.</p>
-                        <p>Design thinking is iterative, and cyclic. Combining raw creative out with theoretical
-                            structure is the best way to deliver high quality products to clients. Listening and guiding
-                            are core communication principles between the developer and client.</p>
-                        <p>When developing new web sites and applications our job as a development studio is to meet
-                            client needs through empathetic research and interaction. Listening to the client is key
-                            when solving in an unfamiliar domain of expertise. Guiding must be approached as a craft of
-                            finess to bridge the gulf between possible and not possible.</p>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' onclick="window.open('https://goo.gl/uub5Mr')">Newspaper Article</button>
+                    </div>
+
+                </div>
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            JEE Mains All India Rank <span style="color: #007cc7;">84</span> 
+                        </span>
+                        <p class='description'>
+                            Achieved a rank of 84 out of 1.1 million aspirants all over the country (2016)
+                        </p>
                     </div>
                 </div>
-                <div class="row">
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            COMED-K, PESSAT exams <span style="color: #007cc7;">1st Rank</span>
+                        </span>
+                        <p class='description'>
+                            Recognised by National Media - both in print and Television. Click on the links for a few online articles:
+                        </p>
+                    </div>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id="button-comed">Link to Achievement</button>
+                    </div>          
+                </div>
+                <div id="modal-comed" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span id="close-comed" class="close-comed">&times;</span>
+                        <h2 class="modal-content-title">Links to Articles</h2>
+                        <a target='_blank' href="https://www.deccanherald.com/city/daily-dose-of-cricket-helped-him-focus-on-studies-528554.html" class="modal-content-links">Deccan Herald interview</a><br>
+                        <a target='_blank' href="https://www.thehindu.com/news/cities/bangalore/comedk-seven-from-state-among-top-10/article8657721.ece" class="modal-content-links">The Hindu - ComedK</a><br>
+                        <a target='_blank' href="https://www.thehindu.com/news/cities/bangalore/it-was-more-than-just-academics-for-them/article8631730.ece" class="modal-content-links">The Hindu - More than academics</a>
+                        
+                    </div>
+                  
+                </div>                  
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container" style="width: 100%;">
+                        <span class="title">
+                            Nominated for <span style="color: #007cc7;">Indian Youth Delegation</span> to China by the Indian Government
+                        </span>
+                        <p class='description'>
+                            Selection from the Ministry of Youth Affairs and Sports, Government of India, included only 120 students all over the country.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container"style="width: 100%;">
+                        <span class="title">
+                            <span style="color: #007cc7;">National Talent Search (NTSE)</span> National Level Scholarship
+                        </span>
+                    </div>
+                </div>
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container" style="width: 100%;">
+                        <span class="title">
+                            Rotary Club <span style="color: #007cc7;">Academic Excellence </span>Prize
+                        </span>
+                    </div>
+                </div>
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container" style="width: 100%;">
+                        <span class="title"> 
+                              Duke University’s <span style="color: #007cc7;">Duke TIP ASSET Talent Search Exam </span>- 100th Percentile
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="leadership" class="container-fluid tab-content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 left-content">
-                        <strong>Programming Delivers Solutions.</strong><br>
-                        <img src="http://nickfazz.me/codepen_assets/vectors/code_art.svg"
-                            alt="Binary digits and line art." class="imf-fluid img-custwidth">
+        
+        <div id="leadership" class="tab-content" style="display: flex;">
+            <div class='banner-image'>
+                <img src="" class='banner-image'>
+            </div>
+            <div class='list-of-achievements-container'>
+
+                <!-- Add the list of achievements here -->
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            <span style="color: #007cc7;">General Secretary, Academic Affairs,</span> IIT Dharwad
+                        </span>
+                        <p class='description'>
+                            Represent the entire student community in all academic matters and forums, working closely with Director, Deans and the Academic Senate<br>Enable an exuberant environment of innovation and entrepreneurship within the student community. Ensure a start-up fund to kickstart small-scale start-ups 
+                        </p>
                     </div>
-                    <div class="col-sm-6 right-content">
-                        <h3><strong>Programming Delivers Solutions. Engineering and Development Thrive on Strong
-                                Design.</strong></h3>
-                        <p>Using current software development technologies and proven best practices in software
-                            engineering, coupled with a formal background in computer science drives and delivers high
-                            quality web development solutions.</p>
-                        <p>Adaptive development methods ensure cross-device and cross-platform consistent software
-                            solutions.</p>
-                        <p>Understanding client levels of technical knowledge is important. We understand that some
-                            clients require to be more involved in the development process than others. Transparency is
-                            a key factor which addresses security and technical issues across domains. When working with
-                            clients from the science and engineering field open communication and input regarding
-                            technology is welcome. We are always open to learning and compormise.</p>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-gen-sec'>Poster</button>
+                    </div>
+
+                </div>
+                <div id="modal-gen-sec" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span id="close-gen-sec" class="close-comed">&times;</span>
+                        <h2 class="modal-content-title">Campaign poster</h2>
+                        <div style="text-align: center;"><img src="assets/gen-sec.png" height="40%" ></div>
+                    </div>
+                </div>         
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container" style="width: 100%;">
+                        <span class="title">
+                            Student Mentor Coordinator & Mentor 
+                        </span>
+                        <p class='description'>
+                            Manage and coordinate the activities of student mentors - assignment of mentors to mentees, analysis of performance, tracking the growth of underperforming students. <br>Support and advise junior and incoming students in academic and personal areas
+                            <br>Handpicked for the position by the Director, IIT Dharwad and Dr. VM Gadre (IIT Bombay) 
+
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container" style="width: 100%;">
+                        <span class="title">
+                            Computer Science <span style="color: #007cc7;">Branch Representative </span>
+                        </span>
+                        <p class='description'>
+                            • Engage in communication with professors to manage assignments, seminars, classes, schedules<br>
+                            • Voice of the class, <span style="color: #007cc7; font-weight: bold;">ensure equal opportunities</span>  for all students 
+                        </p>
+                    </div>
+                </div>
+                          
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container" style="width: 100%;">
+                        <span class="title">
+                            Sports Secretary - Football
+                        </span>
+                        <p class='description'>
+                            • Ensure the best playing conditions for the team, work closely with Sports management and staff<br>
+                            • Represented the institute football team and also enabled us to perform well at the Inter IIT sports meet
+                            in Guwahati                        
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        
         <div id="social-responsibility" class="container-fluid tab-content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 left-content">
-                        <strong>Support is Trust.</strong>
-                        <img src="http://nickfazz.me/codepen_assets/vectors/support_vector.svg" alt="Line art of key."
-                            class="imf-fluid img-custwidth">
+            <div class='banner-image'>
+                <img src="" class='banner-image'>
+            </div>
+            <div class='list-of-achievements-container'>
+                <!-- Add the list of achievements here -->
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            <span style="color: #007cc7;">MIT and Deshpande Foundation</span>
+                        </span>
+                        <p class='description'>
+                            • Gathered vital information to understand villagers’ situation, by touring the villages of Belagavi,
+                            Karnataka in collaboration with MIT and Deshpande Foundation. Foundation focuses on strengthening local ecosystems, by building leaders and entrepreneurs for heightened socio-economic impact<br>
+                            • Worked with Mahesh Foundation, an NGO working towards providing electricity and AIDS support, to apprehend condition of local farmers in drought-hit areas<br>
+                            • Rural Women Empowerment - Assessed challenges faced by small-scale start-ups run entirely by women to provide suitable suggestions
+                        </p>
                     </div>
-                    <div class="col-sm-6 right-content">
-                        <h3><strong>Support is Trust. Product Life Cycle Beyond Development.</strong></h3>
-                        <p>Client support is rooted in the mindset of client empathy and need. Delivering emerging
-                            technologies to strengthen the product and both user and client experience are integral to
-                            our support role.</p>
-                        <p>Security features are updated to protect against current threats to protect the business,
-                            technology, and users. Best practices are communicated and implemented with the client and
-                            user in mind.</p>
-                        <p>Support is an ongoing role which extends the development period of the software. Scale,
-                            security and usability are key support concepts which we deliver in our product support
-                            role.</p>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-mit'>Some Photos</button>
+                    </div>
+
+                </div>
+                <div id="modal-mit" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span id="close-mit" class="close-comed">&times;</span>
+                        <h2 class="modal-content-title">MIT Deshpande Placeholder</h2>
+                        <!-- replace with carousel when we get the images -->
+                        <div style="text-align: center; object-fit: cover; height: 500px;"><img src="assets/gen-sec.png" style="height: 500px;"></div>
+                    </div>
+                </div>         
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            <span style="color: #007cc7;">Humans of IIT</span> Initiative 
+                        </span>
+                        <p class='description'>
+                            Representative of IIT Dharwad, with a mission to reach all IITs, and portray beautiful true stories of students, bringing out oneness, real-life heroes and in general life of an IITian. Showcasing it to the world and inspiring the young aspirants
+                        </p>
+                    </div>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-human'>My Contributions</button>
+                    </div>
+                </div>
+                <div id="modal-human" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span id="close-human" class="close-comed">&times;</span>
+                        <h2 class="modal-content-title">Humans of IIT Placeholder</h2>
+                        <!-- replace with carousel when we get the images -->
+                        <div style="text-align: center; object-fit: cover; height: 500px;"><img src="assets/gen-sec.png" style="height: 500px;"></div>
+                    </div>
+                </div> 
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            Nasdaq <span style="color: #007cc7;">GoodWorks</span>
+                        </span>
+                        <p class='description'>
+                            • As part of CSR, traveled to 6 different <span style="color: #007cc7; font-weight: bold;">government schools and supported underprivileged school kids</span> with back-to-school kits and backpacks 
+                        </p>
+                    </div>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-goodworks'>Some Photos</button>
                     </div>
                 </div>
             </div>
         </div>
         <div id="co-curricular" class="container-fluid tab-content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 left-content">
-                        <strong>Support is Trust.</strong>
-                        <img src="http://nickfazz.me/codepen_assets/vectors/support_vector.svg" alt="Line art of key."
-                            class="imf-fluid img-custwidth">
+            <div class='banner-image'>
+                <img src="" class='banner-image'>
+            </div>
+            <div class='list-of-achievements-container'>
+                <!-- Add the list of achievements here -->
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            <span style="color: #007cc7;">MIT and Deshpande Foundation</span>
+                        </span>
+                        <p class='description'>
+                            • Gathered vital information to understand villagers’ situation, by touring the villages of Belagavi,
+                            Karnataka in collaboration with MIT and Deshpande Foundation. Foundation focuses on strengthening local ecosystems, by building leaders and entrepreneurs for heightened socio-economic impact<br>
+                            • Worked with Mahesh Foundation, an NGO working towards providing electricity and AIDS support, to apprehend condition of local farmers in drought-hit areas<br>
+                            • Rural Women Empowerment - Assessed challenges faced by small-scale start-ups run entirely by women to provide suitable suggestions
+                        </p>
                     </div>
-                    <div class="col-sm-6 right-content">
-                        <h3><strong>Support is Trust. Product Life Cycle Beyond Development.</strong></h3>
-                        <p>Client support is rooted in the mindset of client empathy and need. Delivering emerging
-                            technologies to strengthen the product and both user and client experience are integral to
-                            our support role.</p>
-                        <p>Security features are updated to protect against current threats to protect the business,
-                            technology, and users. Best practices are communicated and implemented with the client and
-                            user in mind.</p>
-                        <p>Support is an ongoing role which extends the development period of the software. Scale,
-                            security and usability are key support concepts which we deliver in our product support
-                            role.</p>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-mit'>Some Photos</button>
+                    </div>
+
+                </div>
+                <div id="modal-mit" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span id="close-mit" class="close-comed">&times;</span>
+                        <h2 class="modal-content-title">MIT Deshpande Placeholder</h2>
+                        <!-- replace with carousel when we get the images -->
+                        <div style="text-align: center; object-fit: cover; height: 500px;"><img src="assets/gen-sec.png" style="height: 500px;"></div>
+                    </div>
+                </div>         
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            <span style="color: #007cc7;">Humans of IIT</span> Initiative 
+                        </span>
+                        <p class='description'>
+                            Representative of IIT Dharwad, with a mission to reach all IITs, and portray beautiful true stories of students, bringing out oneness, real-life heroes and in general life of an IITian. Showcasing it to the world and inspiring the young aspirants
+                        </p>
+                    </div>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-human'>My Contributions</button>
+                    </div>
+                </div>
+                <div id="modal-human" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span id="close-human" class="close-comed">&times;</span>
+                        <h2 class="modal-content-title">Humans of IIT Placeholder</h2>
+                        <!-- replace with carousel when we get the images -->
+                        <div style="text-align: center; object-fit: cover; height: 500px;"><img src="assets/gen-sec.png" style="height: 500px;"></div>
+                    </div>
+                </div> 
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            Nasdaq <span style="color: #007cc7;">GoodWorks</span>
+                        </span>
+                        <p class='description'>
+                            • As part of CSR, traveled to 6 different <span style="color: #007cc7; font-weight: bold;">government schools and supported underprivileged school kids</span> with back-to-school kits and backpacks 
+                        </p>
+                    </div>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-goodworks'>Some Photos</button>
                     </div>
                 </div>
             </div>
         </div>
         <div id="extra-curricular" class="container-fluid tab-content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6 left-content">
-                        <strong>Support is Trust.</strong>
-                        <img src="http://nickfazz.me/codepen_assets/vectors/support_vector.svg" alt="Line art of key."
-                            class="imf-fluid img-custwidth">
+            <div class='banner-image'>
+                <img src="" class='banner-image'>
+            </div>
+            <div class='list-of-achievements-container'>
+                <!-- Add the list of achievements here -->
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            <span style="color: #007cc7;">MIT and Deshpande Foundation</span>
+                        </span>
+                        <p class='description'>
+                            • Gathered vital information to understand villagers’ situation, by touring the villages of Belagavi,
+                            Karnataka in collaboration with MIT and Deshpande Foundation. Foundation focuses on strengthening local ecosystems, by building leaders and entrepreneurs for heightened socio-economic impact<br>
+                            • Worked with Mahesh Foundation, an NGO working towards providing electricity and AIDS support, to apprehend condition of local farmers in drought-hit areas<br>
+                            • Rural Women Empowerment - Assessed challenges faced by small-scale start-ups run entirely by women to provide suitable suggestions
+                        </p>
                     </div>
-                    <div class="col-sm-6 right-content">
-                        <h3><strong>Support is Trust. Product Life Cycle Beyond Development.</strong></h3>
-                        <p>Client support is rooted in the mindset of client empathy and need. Delivering emerging
-                            technologies to strengthen the product and both user and client experience are integral to
-                            our support role.</p>
-                        <p>Security features are updated to protect against current threats to protect the business,
-                            technology, and users. Best practices are communicated and implemented with the client and
-                            user in mind.</p>
-                        <p>Support is an ongoing role which extends the development period of the software. Scale,
-                            security and usability are key support concepts which we deliver in our product support
-                            role.</p>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-mit'>Some Photos</button>
+                    </div>
+
+                </div>
+                <div id="modal-mit" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span id="close-mit" class="close-comed">&times;</span>
+                        <h2 class="modal-content-title">MIT Deshpande Placeholder</h2>
+                        <!-- replace with carousel when we get the images -->
+                        <div style="text-align: center; object-fit: cover; height: 500px;"><img src="assets/gen-sec.png" style="height: 500px;"></div>
+                    </div>
+                </div>         
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            <span style="color: #007cc7;">Humans of IIT</span> Initiative 
+                        </span>
+                        <p class='description'>
+                            Representative of IIT Dharwad, with a mission to reach all IITs, and portray beautiful true stories of students, bringing out oneness, real-life heroes and in general life of an IITian. Showcasing it to the world and inspiring the young aspirants
+                        </p>
+                    </div>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-human'>My Contributions</button>
+                    </div>
+                </div>
+                <div id="modal-human" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span id="close-human" class="close-comed">&times;</span>
+                        <h2 class="modal-content-title">Humans of IIT Placeholder</h2>
+                        <!-- replace with carousel when we get the images -->
+                        <div style="text-align: center; object-fit: cover; height: 500px;"><img src="assets/gen-sec.png" style="height: 500px;"></div>
+                    </div>
+                </div> 
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            Nasdaq <span style="color: #007cc7;">GoodWorks</span>
+                        </span>
+                        <p class='description'>
+                            • As part of CSR, traveled to 6 different <span style="color: #007cc7; font-weight: bold;">government schools and supported underprivileged school kids</span> with back-to-school kits and backpacks 
+                        </p>
+                    </div>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-goodworks'>Some Photos</button>
                     </div>
                 </div>
             </div>
@@ -232,13 +512,11 @@
         function onLoadFunction() {
             console.log(window.location.hash);
             if (window.location.hash) {
-                console.log('Doing the window open method');
                 let tabName = (window.location.hash.split('#')[1]);
                 openTab(tabName.slice(0, -5));
+                window.scrollTo(0,0);
             }
         }
-        
-        
 
         function openTab(tabName) {
 
@@ -285,6 +563,102 @@
         extraLinkEl.addEventListener("click", function () {
             openTab("extra-curricular");
         }, false);
+
+        var modal_comed = document.getElementById("modal-comed");
+        // Get the button that opens the modal
+        var btn_comed = document.getElementById("button-comed");
+        // Get the <span> element that closes the modal
+        var span_comed = document.getElementById("close-comed");
+        // When the user clicks on the button, open the modal
+        btn_comed.onclick = function() {
+        modal_comed.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span_comed.onclick = function() {
+        modal_comed.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal_comed) {
+                modal_comed.style.display = "none";
+            }
+        }
+
+        var modal_gen = document.getElementById("modal-gen-sec");
+        // Get the button that opens the modal
+        var btn_gen = document.getElementById("button-gen-sec");
+        // Get the <span> element that closes the modal
+        var span_gen = document.getElementById("close-gen-sec");
+        // When the user clicks on the button, open the modal
+        btn_gen.onclick = function() {
+            console.log('Hello');
+            modal_gen.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span_gen.onclick = function() {
+        modal_gen.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal_gen) {
+                modal_gen.style.display = "none";
+            }
+        }
+
+        var modal_mit = document.getElementById("modal-mit");
+        // Get the button that opens the modal
+        var btn_mit = document.getElementById("button-mit");
+        // Get the <span> element that closes the modal
+        var span_mit = document.getElementById("close-mit");
+        // When the user clicks on the button, open the modal
+        btn_mit.onclick = function() {
+            console.log('Hello');
+            modal_mit.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span_mit.onclick = function() {
+        modal_mit.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal_mit) {
+                modal_mit.style.display = "none";
+            }
+        }
+
+        // Modal Humans of IIT
+
+        var modal_human = document.getElementById("modal-human");
+        // Get the button that opens the modal
+        var btn_human = document.getElementById("button-human");
+        // Get the <span> element that closes the modal
+        var span_human = document.getElementById("close-human");
+        // When the user clicks on the button, open the modal
+        btn_human.onclick = function() {
+            console.log('Hello');
+            modal_human.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span_human.onclick = function() {
+        modal_human.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal_human) {
+                modal_human.style.display = "none";
+            }
+        }
+
+
+
     </script>
 
 </body>
