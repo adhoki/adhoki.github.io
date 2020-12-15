@@ -357,7 +357,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div id="co-curricular" class="container-fluid tab-content">
             <div class='banner-image'>
                 <img src="" class='banner-image'>
@@ -481,25 +481,22 @@
                     <!-- one flex row with title/description + button on the right -->
                     <div class="title-description-container">
                         <span class="title">
-                            <span style="color: #007cc7;">MIT and Deshpande Foundation</span>
+                            <span style="color: #007cc7;">University-level Sports</span>
                         </span>
                         <p class='description'>
-                            • Gathered vital information to understand villagers’ situation, by touring the villages of Belagavi,
-                            Karnataka in collaboration with MIT and Deshpande Foundation. Foundation focuses on strengthening local ecosystems, by building leaders and entrepreneurs for heightened socio-economic impact<br>
-                            • Worked with Mahesh Foundation, an NGO working towards providing electricity and AIDS support, to apprehend condition of local farmers in drought-hit areas<br>
-                            • Rural Women Empowerment - Assessed challenges faced by small-scale start-ups run entirely by women to provide suitable suggestions
+                            Represented <span style="color: #007cc7; font-weight: bold;">IIT Dharwad University team</span> in <span style="color: #007cc7; font-weight: bold;">Soccer and Basketball</span> in the national Inter-IIT Sports Meets at Madras (2017) and Guwahati (2018), and Aahvan Sports Meet at Mumbai (2017)
                         </p>
                     </div>
                     <div class='button-container'>
-                        <button class='achievement-link-button' id='button-mit'>Some Photos</button>
+                        <button class='achievement-link-button' id='button-interiit'>Some Photos</button>
                     </div>
 
                 </div>
-                <div id="modal-mit" class="modal">
+                <div id="modal-interiit" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <span id="close-mit" class="close-comed">&times;</span>
-                        <h2 class="modal-content-title">MIT Deshpande Placeholder</h2>
+                        <span id="close-interiit" class="close-comed">&times;</span>
+                        <h2 class="modal-content-title">Inter-IIT Placeholder</h2>
                         <!-- replace with carousel when we get the images -->
                         <div style="text-align: center; object-fit: cover; height: 500px;"><img src="assets/gen-sec.png" style="height: 500px;"></div>
                     </div>
@@ -509,40 +506,55 @@
                     <!-- one flex row with title/description + button on the right -->
                     <div class="title-description-container">
                         <span class="title">
-                            <span style="color: #007cc7;">Humans of IIT</span> Initiative 
+                            Junior-Grade <span style="color: #007cc7;">Carnatic Classical Vocalist</span> 
                         </span>
-                        <p class='description'>
-                            Representative of IIT Dharwad, with a mission to reach all IITs, and portray beautiful true stories of students, bringing out oneness, real-life heroes and in general life of an IITian. Showcasing it to the world and inspiring the young aspirants
-                        </p>
-                    </div>
-                    <div class='button-container'>
-                        <button class='achievement-link-button' id='button-human'>My Contributions</button>
-                    </div>
+                    </div>                    
                 </div>
-                <div id="modal-human" class="modal">
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span id="close-human" class="close-comed">&times;</span>
-                        <h2 class="modal-content-title">Humans of IIT Placeholder</h2>
-                        <!-- replace with carousel when we get the images -->
-                        <div style="text-align: center; object-fit: cover; height: 500px;"><img src="assets/gen-sec.png" style="height: 500px;"></div>
-                    </div>
-                </div> 
                 <hr>
                 <div class='individual-achievement-container'>
                     <!-- one flex row with title/description + button on the right -->
                     <div class="title-description-container">
                         <span class="title">
-                            Nasdaq <span style="color: #007cc7;">GoodWorks</span>
+                            10+ performances on <span style="color: #007cc7;">All India Radio (Aakashavani) </span> 
+                        </span>
+                    </div>                    
+                </div>
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            <span style="color: #007cc7;">Bala Gandharva</span>
                         </span>
                         <p class='description'>
-                            • As part of CSR, traveled to 6 different <span style="color: #007cc7; font-weight: bold;">government schools and supported underprivileged school kids</span> with back-to-school kits and backpacks 
+                            At the age of 4, could recognise more than 200 flags from around the world<br>
+                            • Was featured on a regional TV show called Bala Gandharva - Child Prodigy
                         </p>
                     </div>
-                    <div class='button-container'>
-                        <button class='achievement-link-button' id='button-goodworks'>Some Photos</button>
-                    </div>
                 </div>
+                <hr>
+                <div class='individual-achievement-container'>
+                    <!-- one flex row with title/description + button on the right -->
+                    <div class="title-description-container">
+                        <span class="title">
+                            <span style="color: #007cc7;">Acrylic and Water</span> Paintings
+                        </span>
+                    </div>
+                    <div class='button-container'>
+                        <button class='achievement-link-button' id='button-paintings'>Some Paintings</button>
+                    </div>
+
+                </div>
+                <div id="modal-paintings" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span id="close-paintings" class="close-comed">&times;</span>
+                        <h2 class="modal-content-title">Paintings Placeholder</h2>
+                        <!-- replace with carousel when we get the images -->
+                        <div style="text-align: center; object-fit: cover; height: 500px;"><img src="assets/gen-sec.png" style="height: 500px;"></div>
+                    </div>
+                </div>         
+                <hr>
             </div>
         </div>
 
@@ -768,6 +780,54 @@
         window.onclick = function(event) {
             if (event.target == modal_nasdhack) {
                 modal_nasdhack.style.display = "none";
+            }
+        }
+
+        // modal interiit
+        var modal_interiit = document.getElementById("modal-interiit");
+        // Get the button that opens the modal
+        var btn_interiit = document.getElementById("button-interiit");
+        // Get the <span> element that closes the modal
+        var span_interiit = document.getElementById("close-interiit");
+        // When the user clicks on the button, open the modal
+        btn_interiit.onclick = function() {
+            console.log('Hello');
+            modal_interiit.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span_interiit.onclick = function() {
+        modal_interiit.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal_interiit) {
+                modal_interiit.style.display = "none";
+            }
+        }
+
+        // modal paintings
+        var modal_paintings = document.getElementById("modal-paintings");
+        // Get the button that opens the modal
+        var btn_paintings = document.getElementById("button-paintings");
+        // Get the <span> element that closes the modal
+        var span_paintings = document.getElementById("close-paintings");
+        // When the user clicks on the button, open the modal
+        btn_paintings.onclick = function() {
+            console.log('Hello');
+            modal_paintings.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span_paintings.onclick = function() {
+        modal_paintings.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal_paintings) {
+                modal_paintings.style.display = "none";
             }
         }
 
